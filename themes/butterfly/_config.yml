@@ -1054,8 +1054,10 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/background.css">
   bottom:
     # - <script src="xxxx"></script>
+    - <script src="stylesheet"></js/background.js>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
