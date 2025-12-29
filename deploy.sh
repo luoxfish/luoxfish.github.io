@@ -1,6 +1,15 @@
 #!/bin/bash
 
-MSG="deploy: $(date '+%Y-%m-%d %H:%M')"
+DEFAULT_MSG="deploy: $(date '+%Y-%m-%d %H:%M')"
+
+echo "Enter commit message (press Enter to use default):"
+read INPUT_MSG
+
+if [ -z "$INPUT_MSG" ]; then
+  MSG="$DEFAULT_MSG"
+else
+  MSG="deploy: $INPUT_MSG ($(date '+%Y-%m-%d %H:%M'))"
+fi
 
 echo "==============================="
 echo "$MSG"
