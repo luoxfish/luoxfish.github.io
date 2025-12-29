@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEFAULT_MSG="deploy: $(date '+%Y-%m-%d %H:%M')"
+DEFAULT_MSG="Site updated: $(date '+%Y-%m-%d %H:%M')"
 
 echo "Enter commit message (press Enter to use default):"
 read INPUT_MSG
@@ -8,7 +8,7 @@ read INPUT_MSG
 if [ -z "$INPUT_MSG" ]; then
   MSG="$DEFAULT_MSG"
 else
-  MSG="deploy: $INPUT_MSG ($(date '+%Y-%m-%d %H:%M'))"
+  MSG="Site updated: $INPUT_MSG ($(date '+%Y-%m-%d %H:%M'))"
 fi
 
 echo "==============================="
@@ -26,4 +26,4 @@ fi
 hexo clean
 hexo g -d
 
-echo "Deploy finished!"
+echo "Site updated finished!"
