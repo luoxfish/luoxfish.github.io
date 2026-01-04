@@ -73,7 +73,7 @@ favicon: /img/favicon.png
 
 avatar:
   # 头像图片
-  img: /img/butterfly-icon.png
+  img: https://upyun.lauro.cn/blog/2026/01/2026-01-04-b4nTEW.jpg
   # 是否启用头像特效
   effect: false
 
@@ -84,7 +84,7 @@ disable_top_img: false
 default_top_img:
 
 # 首页横幅
-index_img:
+index_img: https://upyun.lauro.cn/blog/2026/01/2026-01-04-3TvI0w.png
 
 # 归档页横幅
 archive_img:
