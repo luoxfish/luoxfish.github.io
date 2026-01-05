@@ -136,7 +136,7 @@ post_meta:
   # 首页文章信息
   page:
     # created / updated / both
-    date_type: created
+    date_type: both
     # date / relative
     date_format: date
     categories: true
