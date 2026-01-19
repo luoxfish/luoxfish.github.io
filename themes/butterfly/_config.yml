@@ -106,7 +106,7 @@ category_img:
 category_per_img:
 
 # 页脚背景图片
-footer_img: true
+footer_img: false
 
 # 网站背景
 # 可设置为颜色、图片 URL，或数组（每次刷新随机）
