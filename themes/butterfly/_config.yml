@@ -174,10 +174,10 @@ subtitle:
   # 1 hitokoto.cn
   # 2 api.aa1.cn
   # 3 jinrishici.com
-  source: false
+  source: 1
   # 关闭打字机效果时仅显示第一行
   sub:
-
+    - 独立思考，明辨是非
 # 首页文章布局
 # 1 左图右文
 # 2 右图左文
@@ -194,7 +194,7 @@ index_layout: 3
 # 3 auto_excerpt（默认）
 # false 不显示
 index_post_content:
-  method: 3
+  method: 2
   # 摘要长度
   length: 500
 
@@ -214,7 +214,7 @@ toc:
 
 post_copyright:
   enable: true
-  decode: false
+  decode: true
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
@@ -253,7 +253,7 @@ post_pagination: 1
 
 # 文章过期提醒
 noticeOutdate:
-  enable: false
+  enable: true
   # simple / flat
   style: flat
   # 超过多少天显示

@@ -3,6 +3,7 @@ title: Hello World
 tags:
   - node.js
   - hexo
+cover: 'https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg.png'
 categories: 学习笔记
 abbrlink: 4a17b156
 ---
