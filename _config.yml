@@ -117,7 +117,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: git@github.com:zoyu66/zoyu66.github.io.git  # 你的仓库 SSH 地址
+  repo: git@github.com:luoxfish/luoxfish.github.io.git  # 你的仓库 SSH 地址
   branch: main                                      # 远程部署分支
-  name: "zoyu66"                                    # Git 用户名，可选
+  name: "luoxfish"                                    # Git 用户名，可选
   email: "2108268486@qq.com"                        # Git 邮箱，可选
