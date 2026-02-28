@@ -164,11 +164,11 @@ index_top_img_height:
 
 # 首页副标题
 subtitle:
-  enable: false
+  enable: true
   # 是否启用打字机效果
   effect: true
   # typed.js 自定义配置
-  typed_option:
+  typed_option: true
   # 第三方一言 API（仅中文）
   # false 关闭
   # 1 hitokoto.cn
