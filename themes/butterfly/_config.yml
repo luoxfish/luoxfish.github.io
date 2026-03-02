@@ -276,7 +276,7 @@ footer:
   copyright:
     enable: true
     version: true
-  custom_text:
+  custom_text: <a href="https://beian.miit.gov.cn/" target="_blank">辽ICP备2025069469号-1</a>
 
 # --------------------------------------
 # 侧边栏设置
@@ -296,12 +296,12 @@ aside:
     category: true
   card_author:
     enable: true
-    description:
+    description: 这里是作者描述
     button:
       enable: true
       icon: fab fa-github
       text: 关注我
-      link: https://github.com/xxxxxx
+      link: https://github.com/luoxfish
   card_announcement:
     enable: true
     content: 这是我的博客
@@ -327,7 +327,7 @@ aside:
   card_tags:
     enable: true
     limit: 40
-    color: false
+    color: true
     # random / name / length
     orderby: random
     # 1 升序 / -1 降序
@@ -351,7 +351,7 @@ aside:
     post_count: true
     last_push_date: true
     sort_order:
-    runtime_date:
+    runtime_date: 2025/12/28
 
 # --------------------------------------
 # 右下角按钮
@@ -401,7 +401,7 @@ copy:
 
 # 字数统计（需安装插件）
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -417,6 +417,8 @@ busuanzi:
 # --------------------------------------
 
 math:
+  # Choose: mathjax, katex
+  # Leave it empty if you don't need math
   use:
   per_page: true
   hide_scrollbar: false

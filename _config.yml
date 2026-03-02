@@ -9,11 +9,11 @@ description: ''
 keywords:
 author: 洛小鱼
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://luofish.com
 permalink: posts/:abbrlink/  #文章结尾不带 .html
 permalink_defaults:
 pretty_urls:
@@ -104,8 +104,8 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
+include: []
+exclude: []
 ignore:
 
 # Extensions
