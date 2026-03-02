@@ -470,12 +470,12 @@ comments:
   # 可选：Disqus / Disqusjs / Livere / Gitalk / Valine / Waline / Utterances
   #       Facebook Comments / Twikoo / Giscus / Remark42 / Artalk
   # 双评论系统格式示例：Disqus,Waline
-  use:
+  use: Twikoo
   # 是否在按钮旁显示评论系统名称
   text: true
   # 懒加载：评论区进入视口后才加载
   # 启用后评论数统计将失效
-  lazyload: false
+  lazyload: true
   # 是否在文章顶部横幅显示评论数
   count: false
   # 是否在首页文章卡片显示评论数
@@ -559,10 +559,10 @@ facebook_comments:
 # Twikoo 评论
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
+  envId: https://luofish.netlify.app/
   region:
   # 使用 Twikoo 访问量作为页面浏览量
-  visitor: false
+  visitor: true
   option:
 
 # Giscus 评论
