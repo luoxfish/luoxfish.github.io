@@ -559,7 +559,7 @@ facebook_comments:
 # Twikoo 评论
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://luofish.netlify.app/
+  envId: https://luofish.netlify.app/.netlify/functions/twikoo
   region:
   # 使用 Twikoo 访问量作为页面浏览量
   visitor: true
