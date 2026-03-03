@@ -1055,7 +1055,7 @@ CDN:
     # snackbar:
     # snackbar_css:
     # translate:
-    # twikoo:
+    twikoo: https://cdn.jsdelivr.net/npm/twikoo@1.7.1/dist/twikoo.all.min.js
     # typed:
     # utils:
     # valine:
