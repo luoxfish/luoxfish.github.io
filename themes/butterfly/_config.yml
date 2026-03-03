@@ -1071,7 +1071,7 @@ CDN:
     # snackbar:
     # snackbar_css:
     # translate:
-    # twikoo:
+    twikoo: /js/twikoo.min.js
     # typed:
     # utils:
     # valine:
