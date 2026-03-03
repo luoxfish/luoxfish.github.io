@@ -37,7 +37,7 @@ jobs:
       - name: 生成静态文件
         run: npx hexo generate
 
-        - name: 构建
+      - name: 构建
         run: npx hexo clean && npx hexo generate
 
       - name: 压缩静态资源
