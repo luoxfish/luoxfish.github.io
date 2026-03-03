@@ -2,28 +2,31 @@
 
 DEFAULT_MSG="Site updated: $(date '+%Y-%m-%d %H:%M')"
 
-echo "Enter commit message (press Enter to use default):"
+echo "请输入提交信息（直接回车使用默认）："
 read INPUT_MSG
 
 if [ -z "$INPUT_MSG" ]; then
   MSG="$DEFAULT_MSG"
 else
-  MSG="Site updated: $INPUT_MSG ($(date '+%Y-%m-%d %H:%M'))"
+  MSG="$INPUT_MSG"
 fi
 
-echo "==============================="
-echo "$MSG"
+echo ""
+echo "📦 提交信息：$MSG"
 echo "==============================="
 
-if git diff --quiet && git diff --cached --quiet; then
-  echo "No changes to commit"
-else
-  git add .
-  git commit -m "$MSG"
-  git push
+# 检查是否有变更
+if git diff --quiet && git diff --cached --quiet && [ -z "$(git ls-files --others --exclude-standard)" ]; then
+  echo "✅ 没有需要提交的变更"
+  exit 0
 fi
 
-hexo clean
-hexo g -d
+git add .
+git commit -m "$MSG"
 
-echo "Site updated finished!"
+echo ""
+echo "🚀 正在推送到 origin source..."
+git push origin source
+
+echo ""
+echo "✅ 推送完成！GitHub Actions 将自动构建部署。"
