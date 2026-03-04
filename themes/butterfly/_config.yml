@@ -787,7 +787,7 @@ canvas_ribbon:
 
 # 飘动彩带
 canvas_fluttering_ribbon:
-  enable: true
+  enable: false
   mobile: false
 
 # 粒子连线背景（canvas_nest）
@@ -1071,7 +1071,7 @@ CDN:
     # snackbar:
     # snackbar_css:
     # translate:
-    twikoo: /js/twikoo.min.js
+    # twikoo:
     # typed:
     # utils:
     # valine:
