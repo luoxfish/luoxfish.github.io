@@ -475,7 +475,7 @@ comments:
   text: true
   # 懒加载：评论区进入视口后才加载
   # 启用后评论数统计将失效
-  lazyload: true
+  lazyload: false
   # 是否在文章顶部横幅显示评论数
   count: false
   # 是否在首页文章卡片显示评论数
