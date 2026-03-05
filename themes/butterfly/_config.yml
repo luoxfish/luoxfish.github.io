@@ -60,8 +60,8 @@ code_blocks:
 # 格式：
 #   icon: 链接 || 描述 || 颜色
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || 邮箱 || '#4a7dbe'
+  fab fa-github: https://github.com/luoxfish || Github || '#24292e'
+  fas fa-envelope: mailto:2108268486@qq.com || 邮箱 || '#4a7dbe'
   fa-brands fa-bilibili: https://space.bilibili.com/454341051 || BiliBili || "#24292e"
 
 # --------------------------------------
@@ -110,7 +110,7 @@ footer_img: false
 
 # 网站背景
 # 可设置为颜色、图片 URL，或数组（每次刷新随机）
-background:
+background: https://upyun.lauro.cn/blog/2026/03/2026-03-05-sN9oZk.png
 
 cover:
   # 是否启用封面
@@ -998,10 +998,9 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
-    - <link rel="stylesheet" href="/css/background.css">
+    - <link rel="stylesheet" href="/css/custom.css"  media="defer" onload="this.media='all'">
   bottom:
     # - <script src="xxxx"></script>
-    - <script src="stylesheet"></js/background.js>
 
 # --------------------------------------
 # CDN 设置
