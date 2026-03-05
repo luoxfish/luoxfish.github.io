@@ -84,7 +84,8 @@ disable_top_img: false
 default_top_img:
 
 # 首页横幅
-index_img: https://upyun.lauro.cn/blog/2026/01/2026-01-04-3TvI0w.png
+index_img:
+# https://upyun.lauro.cn/blog/2026/01/2026-01-04-3TvI0w.png
 
 # 归档页横幅
 archive_img:
