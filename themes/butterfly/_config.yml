@@ -175,7 +175,7 @@ subtitle:
   # 1 hitokoto.cn
   # 2 api.aa1.cn
   # 3 jinrishici.com
-  source: 1
+  source: 2
   # 关闭打字机效果时仅显示第一行
   sub:
     - 独立思考，明辨是非
