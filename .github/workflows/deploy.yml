@@ -53,3 +53,27 @@ jobs:
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_message: 'Deploy: ${{ github.run_id }} @ ${{ github.event.head_commit.timestamp }}'
+          
+      - name: 刷新 EdgeOne 缓存
+        env:
+          SECRET_ID: ${{ secrets.SECRETID }}
+          SECRET_KEY: ${{ secrets.SECRETKEY }}
+          ZONE_ID: ${{ secrets.EDGEONE_ZONE_ID }}
+        run: |
+          pip install tencentcloud-sdk-python-teo --quiet
+          python3 - <<'EOF'
+          import os
+          from tencentcloud.common import credential
+          from tencentcloud.teo.v20220901 import teo_client, models
+
+          cred = credential.Credential(os.environ["SECRET_ID"], os.environ["SECRET_KEY"])
+          client = teo_client.TeoClient(cred, "ap-guangzhou")
+
+          req = models.CreatePurgeTaskRequest()
+          req.ZoneId = os.environ["ZONE_ID"]
+          req.Type = "purge_prefix"
+          req.Targets = ["https://luofish.com/"]
+
+          resp = client.CreatePurgeTask(req)
+          print("缓存刷新成功：", resp.JobId)
+          EOF
