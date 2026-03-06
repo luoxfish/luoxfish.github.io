@@ -1,6 +1,5 @@
 if theme.preloader.enable
-  case theme.preloader.load_style    
-    when 'pokeball'
-      include ./load_style/pokeball.pug
-    default
-      include ./load_style/default.pug
+  if theme.preloader.source === 1
+    include ./fullpage-loading.pug
+  else
+    include ./pace.pug
